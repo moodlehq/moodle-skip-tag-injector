@@ -26,3 +26,4 @@ Preview a user preset as single view template in database|mod/data/tests/behat/p
 Block a user|message/tests/behat/block_user.feature
 Check activities using topics and weeks formats, and paged mode and not paged mode|course/tests/behat/course_controls.feature
 Try to send a message to a private conversation is not contact but you are allowed to send a message|message/tests/behat/message_send_messages.feature
+Teacher can replace its own H5P files|contentbank/contenttype/h5p/tests/behat/teacher_replace_content.feature

@@ -1,6 +1,6 @@
 Viewing a discussion while grading is fullscreen|public/mod/forum/tests/behat/grade_view_discussion.feature
 Delete questions by clicking on the delete icon.|public/mod/quiz/tests/behat/editing_remove_question.feature
-As a Privacy Officer, I cannot re-submit deletion data request without permission.|public/admin/tool/dataprivacy/tests/behat/datadelete.feature
+As a Privacy Officer, I cannot re-submit deletion data request without permission.|public/admin/tool/dataprivacy/tests/behat/datadelete.feature 
 Do various attempts and check them with the attempts and user grades reports|public/mod/h5pactivity/tests/behat/sending_attempt.feature
 Student see only his own activity|public/mod/h5pactivity/tests/behat/recent_activity.feature
 Teacher see each student activity|public/mod/h5pactivity/tests/behat/recent_activity.feature
