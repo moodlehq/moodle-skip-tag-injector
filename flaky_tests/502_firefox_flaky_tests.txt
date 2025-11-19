@@ -29,4 +29,5 @@ Try to send a message to a private conversation is not contact but you are allow
 Teacher can replace its own H5P files|public/contentbank/contenttype/h5p/tests/behat/teacher_replace_content.feature
 The view action for sections displays the single section page|public/course/format/tests/behat/section_page.feature
 Bulk selection in small devices|public/course/format/tests/behat/bulk_select.feature
+Users with 'deleteanymessage' capability can delete message for others|public/message/tests/behat/message_delete_conversation.feature
 
