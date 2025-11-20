@@ -39,12 +39,14 @@ while IFS='|' read -r scenario_name filepath; do
         echo "Error: Test file not found at ${full_filepath}"
         continue
     fi
+    # Trim trailing whitespace from scenario_name
+    scenario_name=$(printf '%s\n' "$scenario_name" | sed 's/[[:space:]]*$//')
 
     escaped_scenario_name=$(printf '%s\n' "$scenario_name" | sed -e 's/[.[\*^$/]/\\&/g')
 
     # Inject the @skip tag above the scenario or scenario outline.
-    if grep -q -E ":\s*${scenario_name}$" "${full_filepath}"; then
-        awk -v scenario="$scenario_name" '
+    if grep -q -E ":\s*${escaped_scenario_name}$" "${full_filepath}"; then
+        awk -v scenario="$escaped_scenario_name" '
       {
         lines[++n] = $0
       }
