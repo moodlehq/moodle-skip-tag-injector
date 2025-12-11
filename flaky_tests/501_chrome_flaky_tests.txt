@@ -7,3 +7,4 @@ Teacher see each student activity|public/mod/h5pactivity/tests/behat/recent_acti
 Verify that students can complete an H5P activity by achieving a passing grade|public/mod/h5pactivity/tests/behat/h5pactivity_completion_pass_grade.feature
 Hide/Show toggle with javascript enabled|public/course/tests/behat/activities_visibility_icons.feature
 As admin, enable allow filtering of exports by course setting, export data for a user and download it|public/admin/tool/dataprivacy/tests/behat/dataexport.feature
+Dragging a category over a category with no children shows an 'as new child' drop target|public/question/bank/managecategories/tests/behat/move_question_categories.feature
