@@ -1,4 +1,0 @@
-Viewing a discussion while grading is fullscreen|mod/forum/tests/behat/grade_view_discussion.feature
-General activities course controls using topics and weeks formats, and paged mode and not paged mode works as expected|course/tests/behat/course_controls.feature
-Verify that students can complete an H5P activity by achieving a passing grade|mod/h5pactivity/tests/behat/h5pactivity_completion_pass_grade.feature
-Hide/Show toggle with javascript enabled|course/tests/behat/activities_visibility_icons.feature
