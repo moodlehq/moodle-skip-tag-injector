@@ -29,4 +29,11 @@ Try to send a message to a private conversation is not contact but you are allow
 Teacher can replace its own H5P files|public/contentbank/contenttype/h5p/tests/behat/teacher_replace_content.feature
 The view action for sections displays the single section page|public/course/format/tests/behat/section_page.feature
 Bulk selection in small devices|public/course/format/tests/behat/bulk_select.feature
+Delete a file and a folder using bulk functionality|public/repository/tests/behat/delete_files.feature
+Delete a file and a folder|public/repository/tests/behat/delete_files.feature
+Delete files using the select all checkbox|public/repository/tests/behat/delete_files.feature
+User preference concerning content visibility overrides site-wide default content visibility|public/contentbank/tests/behat/visibility.feature
+Create custom report with default setup|public/reportbuilder/tests/behat/customreports.feature
+Test force completed set to when previous complete|public/mod/scorm/tests/behat/multisco_review_mode.feature
+Test completion with all scos and correct sco load on re-entry.|public/mod/scorm/tests/behat/completion_condition_require_status.feature
 

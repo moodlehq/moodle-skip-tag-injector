@@ -4,3 +4,4 @@ As a Privacy Officer, I cannot re-submit deletion data request without permissio
 Verify that students can complete an H5P activity by achieving a passing grade|mod/h5pactivity/tests/behat/h5pactivity_completion_pass_grade.feature
 Hide/Show toggle with javascript enabled|course/tests/behat/activities_visibility_icons.feature
 As admin, enable allow filtering of exports by course setting, export data for a user and download it|admin/tool/dataprivacy/tests/behat/dataexport.feature
+Assign students to groups|group/tests/behat/create_groups.feature
