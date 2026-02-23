@@ -36,4 +36,4 @@ User preference concerning content visibility overrides site-wide default conten
 Create custom report with default setup|reportbuilder/tests/behat/customreports.feature
 Test force completed set to when previous complete|mod/scorm/tests/behat/multisco_review_mode.feature
 Test completion with all scos and correct sco load on re-entry.|mod/scorm/tests/behat/completion_condition_require_status.feature
-
+Duplicate custom report|reportbuilder/tests/behat/customreports.feature
