@@ -15,7 +15,6 @@ Users can see the Add button if there is content type available for creation|con
 Block a user who then gets an elevated role|message/tests/behat/block_user.feature
 Preview a user preset as list view template in database|mod/data/tests/behat/preview_preset.feature
 Apply user preset from preview in database|mod/data/tests/behat/preview_preset.feature
-Users can see the Add button if there is content type available for creation|contentbank/tests/behat/edit_content.feature
 View full profiles of someone in the same group in a course with separate groups.|user/tests/behat/view_full_profile.feature
 Send a 'contact request' to someone to add a contact|message/tests/behat/message_drawer_manage_contacts.feature
 Unsent messages will notify users and give them a chance to send it|message/tests/behat/message_send_messages.feature

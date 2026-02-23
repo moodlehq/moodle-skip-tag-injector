@@ -31,6 +31,10 @@ while IFS='|' read -r scenario_name filepath; do
         continue
     fi
 
+    # Trim leading/trailing whitespace from scenario_name and filepath.
+    scenario_name=$(echo "$scenario_name" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    filepath=$(echo "$filepath" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+
     # Prepend the Moodle directory path to the filepath.
     full_filepath="${moodle_dir}/${filepath}"
 
@@ -40,11 +44,18 @@ while IFS='|' read -r scenario_name filepath; do
         continue
     fi
 
-    escaped_scenario_name=$(printf '%s\n' "$scenario_name" | sed -e 's/[.[\*^$/]/\\&/g')
+    # Escape special ERE regex characters in scenario name (for use in grep -E only).
+    escaped_scenario_name=$(printf '%s\n' "$scenario_name" | sed -e 's/[$()*+.?\[\\\^{|]/\\&/g')
 
     # Inject the @skip tag above the scenario or scenario outline.
-    if grep -q -E ":\s*${scenario_name}$" "${full_filepath}"; then
+    if grep -q -E ":\s*${escaped_scenario_name}$" "${full_filepath}"; then
+        # Pass the raw scenario_name to awk and escape regex special chars inside awk.
+        # Using gsub in BEGIN avoids the awk -v backslash-stripping problem,
+        # where e.g. \( passed via -v gets silently converted back to (.
         awk -v scenario="$scenario_name" '
+      BEGIN {
+        gsub(/[$()*+.?\[\\^{|]/, "\\\\&", scenario)
+      }
       {
         lines[++n] = $0
       }
