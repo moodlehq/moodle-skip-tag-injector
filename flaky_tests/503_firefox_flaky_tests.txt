@@ -1,0 +1,39 @@
+Admins can replace the original .h5p file with a new one|public/contentbank/contenttype/h5p/tests/behat/admin_replace_content.feature
+Check that a region with only hidden blocks is not docked in editing mode (javascript enabled)|public/blocks/tests/behat/hidden_block_region.feature
+Display the number of times a content is used in file details view|public/contentbank/tests/behat/view_preferences.feature
+There are several views for displaying contents into the content bank|public/contentbank/tests/behat/view_preferences.feature
+Users can edit content if they have the required permission|public/contentbank/tests/behat/edit_content.feature
+Content created and uploaded events when uploading a content file|public/contentbank/tests/behat/events.feature
+Award badge based on a multiple cohort membership or other criteria.|public/badges/tests/behat/criteria_cohort.feature
+Award badge based on a single cohort membership or other criteria.|public/badges/tests/behat/criteria_cohort.feature
+Display badge with ANY criteria|public/badges/tests/behat/view_badge.feature
+As teacher, I can see the completion status of students in the workshop activity|public/mod/workshop/tests/behat/workshop_completion_pass_grade.feature
+Deleting users who have unread messages sent or received|public/user/tests/behat/delete_users.feature
+Test review mode with all scos completed.|public/mod/scorm/tests/behat/multisco_review_mode.feature
+Manual creation of basic custom profile fields|public/user/tests/behat/custom_profile_fields_manual.feature
+Users can see the Add button if there is content type available for creation|public/contentbank/tests/behat/edit_content.feature
+Block a user who then gets an elevated role|public/message/tests/behat/block_user.feature
+Preview a user preset as list view template in database|public/mod/data/tests/behat/preview_preset.feature
+Apply user preset from preview in database|public/mod/data/tests/behat/preview_preset.feature
+View full profiles of someone in the same group in a course with separate groups.|public/user/tests/behat/view_full_profile.feature
+Send a 'contact request' to someone to add a contact|public/message/tests/behat/message_drawer_manage_contacts.feature
+Unsent messages will notify users and give them a chance to send it|public/message/tests/behat/message_send_messages.feature
+Decline a 'contact request' from someone|public/message/tests/behat/message_drawer_manage_contacts.feature
+Users can create new content if they have the required permission|public/contentbank/tests/behat/edit_content.feature
+Sending a message when 'User enter to send' is enabled|public/message/tests/behat/message_manage_preferences.feature
+Preview a user preset as single view template in database|public/mod/data/tests/behat/preview_preset.feature
+Block a user|public/message/tests/behat/block_user.feature
+Check activities using topics and weeks formats, and paged mode and not paged mode|public/course/tests/behat/course_controls.feature
+Try to send a message to a private conversation is not contact but you are allowed to send a message|public/message/tests/behat/message_send_messages.feature
+Teacher can replace its own H5P files|public/contentbank/contenttype/h5p/tests/behat/teacher_replace_content.feature
+The view action for sections displays the single section page|public/course/format/tests/behat/section_page.feature
+Bulk selection in small devices|public/course/format/tests/behat/bulk_select.feature
+Delete a file and a folder using bulk functionality (individually)|public/repository/tests/behat/delete_files.feature
+Delete a file and a folder using bulk functionality (multiple)|public/repository/tests/behat/delete_files.feature
+Delete a file and a folder|public/repository/tests/behat/delete_files.feature
+Delete files using the select all checkbox|public/repository/tests/behat/delete_files.feature
+User preference concerning content visibility overrides site-wide default content visibility|public/contentbank/tests/behat/visibility.feature
+Create custom report with default setup|public/reportbuilder/tests/behat/customreports.feature
+Test force completed set to when previous complete|public/mod/scorm/tests/behat/multisco_review_mode.feature
+Test completion with all scos and correct sco load on re-entry.|public/mod/scorm/tests/behat/completion_condition_require_status.feature
+Duplicate custom report|public/reportbuilder/tests/behat/customreports.feature
