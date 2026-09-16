@@ -37,3 +37,7 @@ Create custom report with default setup|reportbuilder/tests/behat/customreports.
 Test force completed set to when previous complete|mod/scorm/tests/behat/multisco_review_mode.feature
 Test completion with all scos and correct sco load on re-entry.|mod/scorm/tests/behat/completion_condition_require_status.feature
 
+Altering a file should display licence list modal|files/tests/behat/license_help_modal.feature
+Recent files should display licence list modal|files/tests/behat/license_help_modal.feature
+Private files should display licence list modal|files/tests/behat/license_help_modal.feature
+Verify you can edit social profile fields.|user/profile/field/social/tests/behat/social_profile_field.feature
