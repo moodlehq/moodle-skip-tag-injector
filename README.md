@@ -12,7 +12,7 @@ The `inject_skip_tag` script is designed to:
 
 ### Prerequisites
 
-- A file listing the flaky scenarios in the format: `<relative_file_path>|<scenario_name>`.
+- A file listing the flaky scenarios in the format: `<scenario_name>|<relative_file_path>`.
 - Access to the Moodle root directory where the Behat test files are located.
 
 ### Usage
@@ -29,14 +29,24 @@ Run the script with the following parameters:
 ```
 ### Flaky Scenarios File
 
-The script expects a file named `<branch>_<browser>_flaky_tests.txt` in the same directory as the script. Each line in the file should follow this format:
+The script expects a file named `<branch>_<browser>_flaky_tests.txt` in the `flaky_tests/` directory. Each line in the file should follow this format:
 
 ```
-<relative_file_path>|<scenario_name>
+<scenario_name>|<relative_file_path>
 ```
 
+- `scenario_name`: The full name of the scenario to skip, exactly as it appears after `Scenario:` or `Scenario Outline:` in the feature file. The match is anchored, so the name must be complete — a truncated name matches nothing.
 - `relative_file_path`: The path to the Behat test file, relative to the Moodle root directory.
-- `scenario_name`: The name of the scenario to skip.
+
+For example:
+
+```
+Assign students to groups|group/tests/behat/create_groups.feature
+```
+
+The path is branch-dependent: Moodle 5.1 and later store the web root under `public/`, so the same entry for branch 501 and above reads `Assign students to groups|public/group/tests/behat/create_groups.feature`.
+
+See [AGENTS.md](AGENTS.md) for the full rules on maintaining these lists — in particular, a scenario must never be skipped on both Chrome and Firefox for the same branch, since that removes it from CI coverage entirely.
 
 ### Output
 
