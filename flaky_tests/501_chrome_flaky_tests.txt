@@ -7,3 +7,5 @@ As admin, enable allow filtering of exports by course setting, export data for a
 Dragging a category over a category with no children shows an 'as new child' drop target|public/question/bank/managecategories/tests/behat/move_question_categories.feature
 Assign students to groups|public/group/tests/behat/create_groups.feature
 Activities can not be added when the admin restricts the permissions|public/course/tests/behat/restrict_available_activities.feature
+In an H5P activity, as student I should not be able to deploy the package if not deployed by the teacher|public/mod/h5pactivity/tests/behat/h5pactivity_deployment.feature
+Course cohort enrolment sync cohorts members|public/enrol/cohort/tests/behat/enrolcohorts.feature
