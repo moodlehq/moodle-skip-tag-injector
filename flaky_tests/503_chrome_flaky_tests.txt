@@ -8,3 +8,8 @@ Dragging a category over a category with no children shows an 'as new child' dro
 Assign students to groups|public/group/tests/behat/create_groups.feature
 In an H5P activity, as student I should not be able to deploy the package if not deployed by the teacher|public/mod/h5pactivity/tests/behat/h5pactivity_deployment.feature
 Course cohort enrolment sync cohorts members|public/enrol/cohort/tests/behat/enrolcohorts.feature
+Test review mode with all scos completed.|public/mod/scorm/tests/behat/multisco_review_mode.feature
+Test force new attempt when previous complete/passed/failed.|public/mod/scorm/tests/behat/multisco_review_mode.feature
+Test force new attempt when previous complete/passed/failed and student skipview.|public/mod/scorm/tests/behat/multisco_review_mode.feature
+A student can complete a SCORM activity by achieving a passing grade|public/mod/scorm/tests/behat/scorm_activity_completion.feature
+Test completion with all scos and correct sco load on re-entry.|public/mod/scorm/tests/behat/completion_condition_require_status.feature
