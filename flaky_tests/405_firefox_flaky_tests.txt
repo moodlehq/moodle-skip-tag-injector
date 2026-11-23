@@ -9,7 +9,6 @@ Award badge based on a single cohort membership or other criteria.|badges/tests/
 Display badge with ANY criteria|badges/tests/behat/view_badge.feature
 As teacher, I can see the completion status of students in the workshop activity|mod/workshop/tests/behat/workshop_completion_pass_grade.feature
 Deleting users who have unread messages sent or received|user/tests/behat/delete_users.feature
-Test review mode with all scos completed.|mod/scorm/tests/behat/multisco_review_mode.feature
 Manual creation of basic custom profile fields|user/tests/behat/custom_profile_fields_manual.feature
 Users can see the Add button if there is content type available for creation|contentbank/tests/behat/edit_content.feature
 Block a user who then gets an elevated role|message/tests/behat/block_user.feature
@@ -35,7 +34,6 @@ Delete files using the select all checkbox|repository/tests/behat/delete_files.f
 User preference concerning content visibility overrides site-wide default content visibility|contentbank/tests/behat/visibility.feature
 Create custom report with default setup|reportbuilder/tests/behat/customreports.feature
 Test force completed set to when previous complete|mod/scorm/tests/behat/multisco_review_mode.feature
-Test completion with all scos and correct sco load on re-entry.|mod/scorm/tests/behat/completion_condition_require_status.feature
 
 Altering a file should display licence list modal|files/tests/behat/license_help_modal.feature
 Recent files should display licence list modal|files/tests/behat/license_help_modal.feature

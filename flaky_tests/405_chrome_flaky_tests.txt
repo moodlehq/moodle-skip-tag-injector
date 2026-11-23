@@ -8,3 +8,8 @@ Assign students to groups|group/tests/behat/create_groups.feature
 Overdue in date view|blocks/timeline/tests/behat/block_timeline_dates.feature
 In an H5P activity, as student I should not be able to deploy the package if not deployed by the teacher|mod/h5pactivity/tests/behat/h5pactivity_deployment.feature
 Course cohort enrolment sync cohorts members|enrol/cohort/tests/behat/enrolcohorts.feature
+Test review mode with all scos completed.|mod/scorm/tests/behat/multisco_review_mode.feature
+Test force new attempt when previous complete/passed/failed.|mod/scorm/tests/behat/multisco_review_mode.feature
+Test force new attempt when previous complete/passed/failed and student skipview.|mod/scorm/tests/behat/multisco_review_mode.feature
+A student can complete a SCORM activity by achieving a passing grade|mod/scorm/tests/behat/scorm_activity_completion.feature
+Test completion with all scos and correct sco load on re-entry.|mod/scorm/tests/behat/completion_condition_require_status.feature
