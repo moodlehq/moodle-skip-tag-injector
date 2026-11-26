@@ -13,3 +13,4 @@ Test force new attempt when previous complete/passed/failed.|public/mod/scorm/te
 Test force new attempt when previous complete/passed/failed and student skipview.|public/mod/scorm/tests/behat/multisco_review_mode.feature
 A student can complete a SCORM activity by achieving a passing grade|public/mod/scorm/tests/behat/scorm_activity_completion.feature
 Test completion with all scos and correct sco load on re-entry.|public/mod/scorm/tests/behat/completion_condition_require_status.feature
+As a student I should see the scorm linear navigation when it is set to skip view and open in a new window|public/mod/scorm/tests/behat/course_linear_navigation.feature
